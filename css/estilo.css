@@ -13,14 +13,18 @@ body{
 }
 
 header {
-    background-color: #cf2b2b;
     width: 100%;
-    height: 100px;
+    height: 92px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    background-color: #cf2b2b;
     color: white;
+    box-shadow: 1px 5px 12px -6px #000000;
 }
 
 header > div {
@@ -38,15 +42,15 @@ header p {
 }
 
 main {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 section {
     /* background-color: cadetblue; */
-    margin: 20px;
+    margin: 5px;
     padding: 10px;
-
-    overflow-x: scroll;
 }
 
 section > h1 {
@@ -58,14 +62,18 @@ section > h1 {
 .generic-menu {
     /* background-color: cadetblue; */
     display: flex;
+    overflow-x: scroll;
+
 }
 
 .generic-menu > div {
     background-color: white;
-    height: 200px;
+    height: 216px;
     border-radius: 9px;
+
     margin: 0 10px;
-    padding: 10px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .generic-menu > div img {
@@ -96,4 +104,28 @@ section > h1 {
 
 .item-description p {
     font-size: 16px;
+}
+
+.form {
+    width: 100%;
+    height: 92px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.form > button {
+    width: 364px;
+    height: 61px;
+    border: none;
+    border-radius: 50px;
+    background-color: #cbcbcb;
+    color: white;
+
+    font-size: 20px;
 }

@@ -20,10 +20,10 @@
         <!-- Prato principal -->
         <section>
             <h1 class="righteous">Primeiro, seu prato</h1>
-            <div class="generic-menu">
+            <div id="menu1" class="generic-menu">
 
                 <!-- Burgao Driven -->
-                <div>
+                <div id="opt1" onclick="check(1,1)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
                         <h1>Burgao Driven</h1>
@@ -33,7 +33,7 @@
                 </div>
 
                <!-- prato1 -->
-                <div>
+                <div id="opt2" onclick="check(1,2)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
                         <h1>prato1</h1>
@@ -43,7 +43,7 @@
                 </div>
                 
                 <!-- prato1 -->
-                <div>
+                <div id="opt3" onclick="check(1,3)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
                         <h1>prato1</h1>
@@ -53,7 +53,7 @@
                 </div>
 
                 <!-- prato1 -->
-                <div>
+                <div id="opt4" onclick="check(1,4)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
                         <h1>prato1</h1>
@@ -65,23 +65,23 @@
             </div>
         </section>
 
-        <!-- Bebida -->
+        <!-- Bebidas -->
         <section>
             <h1 class="righteous">Agora, sua bebida</h1>
-            <div class="generic-menu">
+            <div id="menu2" class="generic-menu">
 
-                <!-- prato1 -->
-                <div>
+                <!-- Burgao Driven -->
+                <div id="opt5" onclick="check(2,5)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
-                        <h1>prato1</h1>
-                        <h2>descrição</h2>
-                        <p>preco</p>
+                        <h1>Burgao Driven</h1>
+                        <h2>Burgao artesanal Driven destroçador</h2>
+                        <p>R$22,90</p>
                     </div>
                 </div>
 
                <!-- prato1 -->
-                <div>
+                <div id="opt6" onclick="check(2,6)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
                         <h1>prato1</h1>
@@ -91,7 +91,7 @@
                 </div>
                 
                 <!-- prato1 -->
-                <div>
+                <div id="opt7" onclick="check(2,7)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
                         <h1>prato1</h1>
@@ -101,7 +101,7 @@
                 </div>
 
                 <!-- prato1 -->
-                <div>
+                <div id="opt8" onclick="check(2,8)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
                         <h1>prato1</h1>
@@ -116,20 +116,20 @@
         <!-- Sobremesa -->
         <section>
             <h1 class="righteous">Por fim, sua sobremesa</h1>
-            <div class="generic-menu">
+            <div id="menu3" class="generic-menu">
 
-                <!-- prato1 -->
-                <div>
+                <!-- Burgao Driven -->
+                <div id="opt9" onclick="check(3,9)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
-                        <h1>prato1</h1>
-                        <h2>descrição</h2>
-                        <p>preco</p>
+                        <h1>Burgao Driven</h1>
+                        <h2>Burgao artesanal Driven destroçador</h2>
+                        <p>R$22,90</p>
                     </div>
                 </div>
 
                <!-- prato1 -->
-                <div>
+                <div id="opt10" onclick="check(3,10)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
                         <h1>prato1</h1>
@@ -139,7 +139,7 @@
                 </div>
                 
                 <!-- prato1 -->
-                <div>
+                <div id="opt11" onclick="check(3,11)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
                         <h1>prato1</h1>
@@ -149,7 +149,7 @@
                 </div>
 
                 <!-- prato1 -->
-                <div>
+                <div id="opt12" onclick="check(3,12)">
                     <img src="./images/burguer.jpeg" alt="Driven Burguer">
                     <div class="item-description">
                         <h1>prato1</h1>
@@ -160,10 +160,12 @@
 
             </div>
         </section>
+
         
         <div class="form">
             <button>Selecione os 3 itens para fechar o pedido</button>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

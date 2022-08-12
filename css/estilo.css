@@ -21,6 +21,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 2;
     
     background-color: #cf2b2b;
     color: white;
@@ -76,6 +77,19 @@ section > h1 {
     padding: 15px;
     border-radius: 9px;
     box-sizing: border-box;
+    position: relative;
+}
+
+#img-check  {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.hidden {
+    display: none;
 }
 
 .checked {

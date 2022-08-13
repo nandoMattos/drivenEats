@@ -56,7 +56,7 @@ section {
 
 section > h1 {
     font-size: 25px;
-    /* background-color: #cf2b2b; */
+    /* background-color: #cf2b2b;; */
     padding: 0 0 15px 11px;
 }
 
@@ -141,12 +141,16 @@ section > h1 {
     left: 0;
 }
 
+.enable-button {
+    background-color: #32B72F;
+}
+
 .form > button {
     width: 364px;
     height: 61px;
     border: none;
     border-radius: 50px;
-    background-color: #cbcbcb;
+    background-color: #9d9d9d;
     color: white;
 
     font-size: 20px;

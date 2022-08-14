@@ -88,10 +88,6 @@ section > h1 {
     bottom: 15px;
 }
 
-.hidden {
-    display: none;
-}
-
 .checked {
     outline: 4px #32B72F solid;
 }
@@ -154,4 +150,75 @@ section > h1 {
     color: white;
 
     font-size: 20px;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;    
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    width: 90%;
+    height: 353px;
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 30%;
+    
+    color: white;
+    background-color: #50D074;
+    border-radius: 9px;
+    font-size: 22px;
+}
+
+.modal-content h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+#modal-text {
+    margin-top: 10px;
+    padding: 10px 20px ;
+    line-height: 35px;
+}
+#modal-text > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#total {
+    font-weight: 700;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 15px;
+}
+
+#confirm-button {
+    height: 52px;
+
+    border: none;
+    background-color: white;
+    color: #50D074;
+    font-size: 22px;
+    border-radius: 100px;
+}
+
+#cancel-button {
+    background-color: inherit;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    padding-top: 10px;
 }

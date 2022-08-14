@@ -175,7 +175,7 @@
                 <div id="opt-pie" onclick="check('dessert-menu', this)">
                     <img src="./images/torta.jpeg" alt="Torta Holandesa">
                     <div class="item-description">
-                        <h1>Torta Holandesa Driven</h1>
+                        <h1>Torta Holandesa</h1>
                         <h2>Recheio de creme e ganhache de chocolate</h2>
                         <p>R$7,50</p>
                     </div>
@@ -188,6 +188,37 @@
         
         <div class="form" >
             <button disabled onclick="closeOrder()" id="btn-order">Selecione os 3 itens para fechar o pedido</button>
+        </div>
+        
+
+        <div class="hidden modal">
+            <div class="modal-content">
+                <h1>Confirme seu pedido</h1>
+                <div id="modal-text">
+                    <div>
+                        <p>Principal</p>
+                        <p>0</p>
+                    </div>
+                    <div>
+                        <p>Bebida</p>
+                        <p>1</p>
+                    </div>
+                    <div>
+                        <p>Sobremesa</p>
+                        <p>2</p>
+                    </div>
+                    <div>
+                        <p>Total</p>
+                        <p>R$20</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="modal-buttons">
+                    <button onclick="confirmOrder()" id="confirm-button">Tudo certo, pode pedir!</button>
+                    <button onclick="cancelOrder()"; id="cancel-button">Cancelar</button>
+                </div>
+            </div>
         </div>
     </main>
 

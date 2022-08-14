@@ -22,7 +22,7 @@ function check(menuId, opt) {
 }
 
 
-function closeOrder() {
+function closeOrder() { 
     const menuArray = document.querySelectorAll(`.checked`);
     const modalText = document.querySelector(`#modal-text`); 
     modalText.children[3].children[1].innerHTML = 0;
@@ -55,6 +55,9 @@ function closeOrder() {
 }
 
 function confirmOrder() {
+    const nome = prompt("Insira seu nome:")
+    const endereço = prompt("Insira seu endereço:");
+
     const arrayOpt = document.querySelectorAll('.checked');
     const prato = arrayOpt[0].children[1].children[0].innerHTML;
     const bebida = arrayOpt[1].children[1].children[0].innerHTML;
@@ -62,13 +65,12 @@ function confirmOrder() {
 
     const total = (document.querySelector('#modal-text').children[3].children[1].innerHTML).replace("$", "$ ").replace(",", ".");
 
-    const str = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: ${total}`
+    const str = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: ${total}\nNome: ${nome}\nEndereço: ${endereço}`;
     
     const strEncode = encodeURIComponent(str);
-    console.log(strEncode)
-
+    
     window.open(`https://wa.me/5514997928787?text=${strEncode}`)
-}
+}   
 
 function cancelOrder() {
     const modal = document.querySelector(`.modal`);
@@ -98,6 +100,6 @@ function incrementsTotal(priceString){
     let modalTotalPrice = Number(modalTotal.textContent.replace("R$", "").replace(",", '.'));
 
     modalTotalPrice += Number(priceString.replace(',', '.'));
-    
+
     modalTotal.textContent = `R$${modalTotalPrice.toFixed(2).replace(".", ",")}`;
 }

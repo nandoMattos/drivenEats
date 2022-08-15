@@ -56,7 +56,7 @@ function closeOrder() {
 
 function confirmOrder() {
     const nome = prompt("Insira seu nome:")
-    const endereço = prompt("Insira seu endereço:");
+    const endereco = prompt("Insira seu endereço:");
 
     const arrayOpt = document.querySelectorAll('.checked');
     const prato = arrayOpt[0].children[1].children[0].innerHTML;
@@ -65,11 +65,14 @@ function confirmOrder() {
 
     const total = (document.querySelector('#modal-text').children[3].children[1].innerHTML).replace("$", "$ ").replace(",", ".");
 
-    const str = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: ${total}\nNome: ${nome}\nEndereço: ${endereço}`;
+    const str = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: ${total}\nNome: ${nome}\nEndereço: ${endereco}`;
     
     const strEncode = encodeURIComponent(str);
     
-    window.open(`https://wa.me/5514997928787?text=${strEncode}`)
+    if  (nome && endereco)
+        window.open(`https://wa.me/5514997928787?text=${strEncode}`);
+    else
+        alert('Pedido não enviado! Informe nome e endereço')
 }   
 
 function cancelOrder() {

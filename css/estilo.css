@@ -73,6 +73,7 @@ section > h1 {
 .generic-menu > div {
     background-color: white;
     height: 216px;    
+    width: 172px;
     margin: 0 10px;
     padding: 15px;
     border-radius: 9px;
@@ -229,4 +230,35 @@ section > h1 {
 
 .hidden {
     display: none;
+}
+
+@media (min-width: 800px) {
+
+    body {
+        background-color: #eeeeee;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    main {
+        width: 800px;
+        margin: 93px auto;
+        box-shadow: 1px 5px 12px -6px #000000;
+        background-color: white;
+
+        margin-bottom: 40px;
+    }
+
+    .modal-content {
+        width: 600px;
+    }
+
+    .form {
+        position: initial;
+        margin-top: 30px;
+        background-color: #eeeeee;
+    }
+
 }

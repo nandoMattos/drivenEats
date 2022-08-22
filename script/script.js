@@ -21,7 +21,6 @@ function check(menuId, opt) {
     verifyEnbaleButton();
 }
 
-
 function closeOrder() { 
     const menuArray = document.querySelectorAll(`.checked`);
     const modalText = document.querySelector(`#modal-text`); 
